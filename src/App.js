@@ -6,8 +6,8 @@ import AnswerBox from './answer_box';
 import io from 'socket.io-client'
 
 function App() {
-	var app_url = 'http://localhost:3000'
-	// var app_url = 'https://urlshortener-pickfu.herokuapp.com'
+	// var app_url = 'http://localhost:3000'
+	var app_url = 'https://qa-pickfu.herokuapp.com'
 	const [currentTabIndex, setcurrentTabIndex] = useState(0)
 	const [canShowAskQuestion, setcanShowAskQuestion] = useState(false)
 	const [canShowAnswerBox, setcanShowAnswerBox] = useState(false)
