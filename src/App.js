@@ -68,7 +68,8 @@ function App() {
         const response = await fetch(`${app_url}/questions/${question}/answers`)
 		if (response.status === 200){
 			const res = await response.json();
-			setAnswers([...res.data,...answers]);
+			const answersExcept  = answers.filter(x=>x.question !== question)
+			setAnswers([...res.data,...answersExcept]);
 		}
     }
 
